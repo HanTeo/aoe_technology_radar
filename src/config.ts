@@ -5,9 +5,9 @@ export const radarName =
 export const radarNameShort = radarName;
 
 export const quadrants = [
-  "data-ingestion-and-export",
-  "data-storage-and-processing",
-  "data-transformation-and-modelling",
+  "elt",
+  "storage-and-compute",
+  "quality-and-discovery",
   "orchestration-and-observability"
 ];
 
@@ -21,10 +21,10 @@ export const getItemPageNames = (items: Item[]) =>
 export const showEmptyRings = false;
 
 const messages: { [k: string]: string } = {
-  "data-ingestion-and-export": "Data Ingestion & Export",
-  "data-storage-and-processing": "Data Storage & Processing",
-  "data-transformation-and-modelling": "Data Transformation & Modelling",
-  "orchestration-and-observability": "Orchestration, Observability & Discovery"
+  "elt": "Extraction, Load & Transform",
+  "storage-and-compute": "Storage & Compute",
+  "quality-and-discovery": "Quality & Discovery",
+  "orchestration-and-observability": "Orchestration & Observability"
 };
 
 export const translate = (key: string) => messages[key] || "-";
